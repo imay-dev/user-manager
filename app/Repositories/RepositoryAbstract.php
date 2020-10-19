@@ -4,7 +4,7 @@ namespace App\Repositories;
 
 
 use Illuminate\Support\Arr;
-use App\Contracts\{RepositoryContract, CriteriaContract};;
+use App\Contracts\{RepositoryContract, CriteriaContract};
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Mockery\Exception;
 
