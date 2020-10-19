@@ -1,10 +1,10 @@
 ## User Manager API
 
-#### Project Description
+### Project Description
 - The following project is a **User Manager** API that allows user to register, login, and see their User data. 
 - The *super-admin* user can create roles, permissions, assign **roles & permissions** to one another, also assign *roles/permissions* to users. 
 
-#### Installation
+### Installation
 - Create `.env` file using `.env.example`
 - Install dependencies
 ```
@@ -15,3 +15,9 @@ composer install
 ```
 php -S localhost:8000 -t public
 ```
+
+### Built With
+
+* [laravel/lumen-framework](https://github.com/laravel/lumen-framework)
+* [laravel/passport](https://github.com/laravel/passport)
+* [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
