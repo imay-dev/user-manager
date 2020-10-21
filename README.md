@@ -3,7 +3,7 @@
 ### Project Description
 - The following project is a **User Manager** API that allows user to register, login, and see their User data. 
 - The *super-admin* user can create roles, permissions, assign **roles & permissions** to one another, also assign *roles/permissions* to users. 
-<br>
+
 ### Installation
 - Create `.env` file using `.env.example`
 - Generate a random 32 characters string and set it as your application key under `APP_KEY` variable of your `.env` file.
@@ -25,7 +25,6 @@ php artisan passport:install
 php -S localhost:8000 -t public
 ```
 
-<br>
 ### Built With
 * [laravel/lumen-framework](https://github.com/laravel/lumen-framework)
 * [laravel/passport](https://github.com/laravel/passport)
@@ -33,7 +32,7 @@ php -S localhost:8000 -t public
 * [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
 * [pearl/lumen-request-validate](https://github.com/pearlkrishn/lumen-request-validate)
 
-<br>
+
 ### Further Information 
 - I used ***laravel/passport*** package for authentication along with ***dusterio/lumen-passport*** wrapper to fix the library for **Lumen**.
 - I used ***spatie/laravel-permission*** package for roles and permissions.
@@ -45,7 +44,6 @@ php -S localhost:8000 -t public
 - There is a `JsonResponseService` to control format of the responses, it is used inside `MainController` that is implemented inside other controllers.
 - There are `Resource Collections` to control the way entities' data will be retrieved.
 
-<br><br>
 ### API Documents
 - [Postman Documentation](https://documenter.getpostman.com/view/4043238/TVYCB1Gk)
 - [Postman Collection](https://www.getpostman.com/collections/aed4b1bf14d994ceb73a)
