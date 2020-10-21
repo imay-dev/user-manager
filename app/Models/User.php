@@ -3,15 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Auth\Authenticatable;
-use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Database\Eloquent\Model;
-use Laravel\Lumen\Auth\Authorizable;
 use Laravel\Passport\HasApiTokens;
+use Spatie\Permission\Traits\HasRoles;
 
-class User extends Model implements AuthenticatableContract, AuthorizableContract
+
+class User extends Model implements AuthenticatableContract
 {
-    use Authenticatable, Authorizable, HasApiTokens;
+    use Authenticatable, HasApiTokens, HasRoles;
 
     /**
      * @var string

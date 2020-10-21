@@ -63,6 +63,9 @@ $app->singleton(
 
 $app->configure('app');
 $app->configure('auth');
+$app->configure('permission');
+$app->configure('permission_data');
+$app->configure('role_data');
 
 /*
 |--------------------------------------------------------------------------
@@ -76,7 +79,9 @@ $app->configure('auth');
 */
 
 $app->routeMiddleware([
- 'auth' => App\Http\Middleware\Authenticate::class,
+    'auth' => App\Http\Middleware\Authenticate::class,
+    'permission' => Spatie\Permission\Middlewares\PermissionMiddleware::class,
+    'role' => Spatie\Permission\Middlewares\RoleMiddleware::class,
 ]);
 
 /*
