@@ -1,17 +1,15 @@
 <?php
 
-namespace App\Http\Resources\Auth;
+namespace App\Http\Resources;
 
-use App\Http\Resources\{PermissionCollection, RoleCollection};
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-
 /**
- * Class User
- * @package App\Http\Resources\Auth
+ * Class Role
+ * @package App\Http\Resources
  */
-class User extends JsonResource
+class Role extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -25,12 +23,9 @@ class User extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'email' => $this->email,
-            'roles' => new RoleCollection($this->whenLoaded('roles')),
+            'guard_name' => $this->guard_name,
             'permissions' => new PermissionCollection($this->whenLoaded('permissions')),
-            'email_verified_at' => $this->email_verified_at,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
+            'users' => $this->users
         ];
     }
 }

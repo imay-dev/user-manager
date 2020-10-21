@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\JsonResponse;
 use App\Contracts\UserContract;
-use App\Http\Requests\{UserStore, UserUpdate};
+use App\Http\Requests\{SyncRolesAndPermissions, UserStore, UserUpdate};
 use App\Http\Resources\Auth\{User, UserCollection};
+use App\Repositories\Eloquent\Criteria\EagerLoad;
 
 /**
  * Class UserController
@@ -40,6 +41,9 @@ class UserController extends MainController
     {
         return $this->response->success(
             new UserCollection($this->userContract
+                ->withCriteria([
+                    new EagerLoad(['roles', 'permissions']),
+                ])
                 ->paginate(request('perPage', 15))
             )
         );
@@ -70,6 +74,9 @@ class UserController extends MainController
     {
         return $this->response->success(
             new User($this->userContract
+                ->withCriteria(
+                    new EagerLoad(['roles', 'permissions'])
+                )
                 ->show($id)
             )
         );
@@ -110,6 +117,23 @@ class UserController extends MainController
 
         return $this->response->success([
             'message' => 'User deleted successfully.'
+        ]);
+    }
+
+    /**
+     * @param SyncRolesAndPermissions $request
+     * @param $id
+     *
+     * @return JsonResponse
+     */
+    public function syncRolesAndPermissions(SyncRolesAndPermissions $request, $id)
+    {
+        $user = $this->userContract->show($id);
+        $user->syncRoles($request->input('roles', []));
+        $user->syncPermissions($request->input('permissions', []));
+
+        return $this->response->success([
+            'message' => 'User Roles & Permissions synced successfully.'
         ]);
     }
 
