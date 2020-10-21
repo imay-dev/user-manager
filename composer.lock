@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fb015a22203ebd809d4d13c9f482cf8",
+    "content-hash": "a6b086d15cc2769c80994ed92718c34c",
     "packages": [
         {
             "name": "brick/math",
@@ -721,16 +721,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.10.0",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "4189cfde0b935b488e7f9b87f36bbef996da42a1"
+                "reference": "2b1dfd52c05bb98bf9630eda948cb39aa8c89487"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/4189cfde0b935b488e7f9b87f36bbef996da42a1",
-                "reference": "4189cfde0b935b488e7f9b87f36bbef996da42a1",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/2b1dfd52c05bb98bf9630eda948cb39aa8c89487",
+                "reference": "2b1dfd52c05bb98bf9630eda948cb39aa8c89487",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +767,7 @@
             ],
             "description": "The Illuminate Collections package.",
             "homepage": "https://laravel.com",
-            "time": "2020-10-12T14:24:15+00:00"
+            "time": "2020-10-19T14:08:41+00:00"
         },
         {
             "name": "illuminate/config",
@@ -871,16 +871,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v8.10.0",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "e89a1572cd5dd193f4d6a4a1c8baeeb1e0bfac5f"
+                "reference": "bcceb7ae1eae421e1f5f06e849f4287e948a36ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/e89a1572cd5dd193f4d6a4a1c8baeeb1e0bfac5f",
-                "reference": "e89a1572cd5dd193f4d6a4a1c8baeeb1e0bfac5f",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/bcceb7ae1eae421e1f5f06e849f4287e948a36ea",
+                "reference": "bcceb7ae1eae421e1f5f06e849f4287e948a36ea",
                 "shasum": ""
             },
             "require": {
@@ -914,11 +914,11 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2020-08-13T14:34:00+00:00"
+            "time": "2020-10-20T18:42:47+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.10.0",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1373,16 +1373,16 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.10.0",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
-                "reference": "561442f134eaf4d3f710bf523ecfe1537fa53f64"
+                "reference": "3182b39bac376cf3791a94f4c397897a46b85fcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/macroable/zipball/561442f134eaf4d3f710bf523ecfe1537fa53f64",
-                "reference": "561442f134eaf4d3f710bf523ecfe1537fa53f64",
+                "url": "https://api.github.com/repos/illuminate/macroable/zipball/3182b39bac376cf3791a94f4c397897a46b85fcd",
+                "reference": "3182b39bac376cf3791a94f4c397897a46b85fcd",
                 "shasum": ""
             },
             "require": {
@@ -1411,7 +1411,7 @@
             ],
             "description": "The Illuminate Macroable package.",
             "homepage": "https://laravel.com",
-            "time": "2020-06-08T14:13:16+00:00"
+            "time": "2020-10-19T14:08:41+00:00"
         },
         {
             "name": "illuminate/pagination",
@@ -1618,16 +1618,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.10.0",
+            "version": "v8.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "ebdebedc68722938f23fa46f329fb6840ab9d2ea"
+                "reference": "52fa3552b996746e48bd539bc80877151c8503b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/ebdebedc68722938f23fa46f329fb6840ab9d2ea",
-                "reference": "ebdebedc68722938f23fa46f329fb6840ab9d2ea",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/52fa3552b996746e48bd539bc80877151c8503b1",
+                "reference": "52fa3552b996746e48bd539bc80877151c8503b1",
                 "shasum": ""
             },
             "require": {
@@ -1637,7 +1637,7 @@
                 "illuminate/collections": "^8.0",
                 "illuminate/contracts": "^8.0",
                 "illuminate/macroable": "^8.0",
-                "nesbot/carbon": "^2.17",
+                "nesbot/carbon": "^2.31",
                 "php": "^7.3",
                 "voku/portable-ascii": "^1.4.8"
             },
@@ -1677,7 +1677,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-10-12T17:58:15+00:00"
+            "time": "2020-10-20T20:12:11+00:00"
         },
         {
             "name": "illuminate/testing",
@@ -2652,6 +2652,53 @@
                 "random"
             ],
             "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "pearl/lumen-request-validate",
+            "version": "1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pearlkrishn/lumen-request-validate.git",
+                "reference": "4fce780fb8e9924ddb5c285e47bb62166365d924"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pearlkrishn/lumen-request-validate/zipball/4fce780fb8e9924ddb5c285e47bb62166365d924",
+                "reference": "4fce780fb8e9924ddb5c285e47bb62166365d924",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.7.* || 5.8.* || 6.* || 7.* || 8.*",
+                "laravel/lumen-framework": "5.7.* || 5.8.* || 6.* || 7.* || 8.*",
+                "php": ">=7.1.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pearl\\RequestValidate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "pearlkrishn",
+                    "email": "pearlkrishn@gmail.com"
+                }
+            ],
+            "description": "Lumen doesn't have form request validator seperatly. This package helps developers to segregate the validation layer from the controller to a separate dedicated class",
+            "keywords": [
+                "form-request",
+                "form-request-validation",
+                "form-validation",
+                "lumen",
+                "lumen-package",
+                "lumen-request-validate",
+                "validation"
+            ],
+            "time": "2020-10-01T17:06:28+00:00"
         },
         {
             "name": "php-http/message-factory",
@@ -5673,6 +5720,61 @@
             "time": "2020-05-29T17:27:14+00:00"
         },
         {
+            "name": "dusterio/lumen-passport",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dusterio/lumen-passport.git",
+                "reference": "14fcdb45bb7edd8aa9577a2bcd4c90b0d344886d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dusterio/lumen-passport/zipball/14fcdb45bb7edd8aa9577a2bcd4c90b0d344886d",
+                "reference": "14fcdb45bb7edd8aa9577a2bcd4c90b0d344886d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.3|~5.4|~5.5|~5.6|^6.0|^7.0|^8.0",
+                "illuminate/support": "~5.3|~5.4|~5.5|~5.6|^6.0|^7.0|^8.0",
+                "laminas/laminas-diactoros": "^2.4",
+                "laravel/passport": ">=0.2.2",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "fzaninotto/faker": "~1.4",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Dusterio\\LumenPassport\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Denis Mysenko",
+                    "email": "denis@mysenko.com",
+                    "homepage": "https://www.mysenko.com"
+                }
+            ],
+            "description": "Making Laravel Passport work with Lumen",
+            "homepage": "https://github.com/dusterio/lumen-passport",
+            "keywords": [
+                "laravel passport",
+                "lumen",
+                "php"
+            ],
+            "time": "2020-09-26T02:23:02+00:00"
+        },
+        {
             "name": "fzaninotto/faker",
             "version": "v1.9.1",
             "source": {
@@ -5768,6 +5870,151 @@
                 "test"
             ],
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laminas/laminas-diactoros",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-diactoros.git",
+                "reference": "36ef09b73e884135d2059cc498c938e90821bb57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/36ef09b73e884135d2059cc498c938e90821bb57",
+                "reference": "36ef09b73e884135d2059cc498c938e90821bb57",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-zendframework-bridge": "^1.0",
+                "php": "^7.1",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "conflict": {
+                "phpspec/prophecy": "<1.9.0"
+            },
+            "provide": {
+                "psr/http-factory-implementation": "1.0",
+                "psr/http-message-implementation": "1.0"
+            },
+            "replace": {
+                "zendframework/zend-diactoros": "^2.2.1"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-gd": "*",
+                "ext-libxml": "*",
+                "http-interop/http-factory-tests": "^0.5.0",
+                "laminas/laminas-coding-standard": "~1.0.0",
+                "php-http/psr7-integration-tests": "^1.0",
+                "phpunit/phpunit": "^7.5.18"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "config-provider": "Laminas\\Diactoros\\ConfigProvider",
+                    "module": "Laminas\\Diactoros"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions/create_uploaded_file.php",
+                    "src/functions/marshal_headers_from_sapi.php",
+                    "src/functions/marshal_method_from_sapi.php",
+                    "src/functions/marshal_protocol_version_from_sapi.php",
+                    "src/functions/marshal_uri_from_sapi.php",
+                    "src/functions/normalize_server.php",
+                    "src/functions/normalize_uploaded_files.php",
+                    "src/functions/parse_cookie_header.php",
+                    "src/functions/create_uploaded_file.legacy.php",
+                    "src/functions/marshal_headers_from_sapi.legacy.php",
+                    "src/functions/marshal_method_from_sapi.legacy.php",
+                    "src/functions/marshal_protocol_version_from_sapi.legacy.php",
+                    "src/functions/marshal_uri_from_sapi.legacy.php",
+                    "src/functions/normalize_server.legacy.php",
+                    "src/functions/normalize_uploaded_files.legacy.php",
+                    "src/functions/parse_cookie_header.legacy.php"
+                ],
+                "psr-4": {
+                    "Laminas\\Diactoros\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "PSR HTTP Message implementations",
+            "homepage": "https://laminas.dev",
+            "keywords": [
+                "http",
+                "laminas",
+                "psr",
+                "psr-17",
+                "psr-7"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-09-03T14:29:41+00:00"
+        },
+        {
+            "name": "laminas/laminas-zendframework-bridge",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laminas": {
+                    "module": "Laminas\\ZendFrameworkBridge"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/autoload.php"
+                ],
+                "psr-4": {
+                    "Laminas\\ZendFrameworkBridge\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Alias legacy ZF class names to Laminas Project equivalents.",
+            "keywords": [
+                "ZendFramework",
+                "autoloading",
+                "laminas",
+                "zf"
+            ],
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-09-14T14:23:00+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7654,7 +7901,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3"
+        "php": "^7.3",
+        "ext-json": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"

@@ -6,10 +6,11 @@
     "type": "project",
     "require": {
         "php": "^7.3",
+        "ext-json": "*",
         "laravel/lumen-framework": "^8.0",
         "laravel/passport": "^10.0",
-        "spatie/laravel-permission": "^3.17",
-        "ext-json": "*"
+        "pearl/lumen-request-validate": "^1.6",
+        "spatie/laravel-permission": "^3.17"
     },
     "require-dev": {
         "fzaninotto/faker": "^1.9.1",
@@ -21,7 +22,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [
