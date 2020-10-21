@@ -20,4 +20,6 @@ php -S localhost:8000 -t public
 
 * [laravel/lumen-framework](https://github.com/laravel/lumen-framework)
 * [laravel/passport](https://github.com/laravel/passport)
+* [dusterio/lumen-passport](https://github.com/dusterio/lumen-passport)
 * [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
+* [pearl/lumen-request-validate](https://github.com/pearlkrishn/lumen-request-validate)

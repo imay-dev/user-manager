@@ -19,7 +19,7 @@ date_default_timezone_set(env('APP_TIMEZONE', 'UTC'));
 |
 */
 
-$app = new Laravel\Lumen\Application(
+$app = new \Dusterio\LumenPassport\Lumen7Application(
     dirname(__DIR__)
 );
 
@@ -28,6 +28,7 @@ $app->withFacades();
 $app->withEloquent();
 
 $app->alias('cache', Illuminate\Cache\CacheManager::class);
+
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings
@@ -61,6 +62,7 @@ $app->singleton(
 */
 
 $app->configure('app');
+$app->configure('auth');
 
 /*
 |--------------------------------------------------------------------------
@@ -73,13 +75,9 @@ $app->configure('app');
 |
 */
 
-// $app->middleware([
-//     App\Http\Middleware\ExampleMiddleware::class
-// ]);
-
-// $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
-// ]);
+$app->routeMiddleware([
+ 'auth' => App\Http\Middleware\Authenticate::class,
+]);
 
 /*
 |--------------------------------------------------------------------------
@@ -96,8 +94,11 @@ $app->register(App\Providers\AppServiceProvider::class);
 $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 $app->register(Laravel\Passport\PassportServiceProvider::class);
+$app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 $app->register(Spatie\Permission\PermissionServiceProvider::class);
+$app->register(Pearl\RequestValidate\RequestServiceProvider::class);
 $app->register(App\Providers\RepositoryProvider::class);
+
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
@@ -108,6 +109,8 @@ $app->register(App\Providers\RepositoryProvider::class);
 | can respond to, as well as the controllers that may handle them.
 |
 */
+
+\Dusterio\LumenPassport\LumenPassport::routes($app, ['prefix' => 'oauth']);
 
 $app->router->group([
     'namespace' => 'App\Http\Controllers',

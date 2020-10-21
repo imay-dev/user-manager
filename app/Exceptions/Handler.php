@@ -2,8 +2,8 @@
 
 namespace App\Exceptions;
 
+use App\Services\JsonResponseService;
 use Exception;
-use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Container\Container;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
@@ -15,7 +15,6 @@ use Illuminate\Validation\ValidationException;
 use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
 use ReflectionClass;
 use Spatie\Permission\Exceptions\UnauthorizedException;
-use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Throwable;
@@ -54,7 +53,6 @@ class Handler extends ExceptionHandler
     public function __construct(Container $container, JsonResponseService $jsonResponseService)
     {
         $this->jsonResponseService = $jsonResponseService;
-        parent::__construct($container);
     }
 
 
@@ -114,7 +112,7 @@ class Handler extends ExceptionHandler
             ], Response::HTTP_FORBIDDEN);
         }
 
-        if ($exception instanceof HttpResponseException) {
+        if ($exception instanceof HttpResponseException || $exception instanceof ValidationException) {
             return parent::render($request, $exception);
         }
 
@@ -123,7 +121,6 @@ class Handler extends ExceptionHandler
                 'failed' => json_decode($exception->getMessage()) ?? $exception->getMessage(),
             ],
             'exception' => (new ReflectionClass($exception))->getShortName(),
-            'file' => $exception->getFile(),
             ], Response::HTTP_INTERNAL_SERVER_ERROR
         );
     }
